@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import WideBox from "@/components/WideBox.vue";
+import WideBox from "@/components/SmallBox.vue";
 
 export default {
   name: "App",
@@ -14,6 +14,11 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
 :root {
   font-size: 8px;
 }

@@ -1,14 +1,17 @@
 <template>
-  <TimeClock />
+  <!-- <TimeClock /> -->
+  <WeatherCardCurrent></WeatherCardCurrent>
 </template>
 
 <script>
-import TimeClock from "@/components/TimeClock.vue";
+// import TimeClock from "@/components/TimeClock.vue";
+import WeatherCardCurrent from "@/components/WeatherCardCurrent.vue";
 
 export default {
   name: "App",
   components: {
-    TimeClock,
+    // TimeClock,
+    WeatherCardCurrent,
   },
 };
 </script>

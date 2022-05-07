@@ -1,14 +1,14 @@
 <template>
-  <wide-box />
+  <TimeClock />
 </template>
 
 <script>
-import WideBox from "@/components/SmallBox.vue";
+import TimeClock from "@/components/TimeClock.vue";
 
 export default {
   name: "App",
   components: {
-    WideBox,
+    TimeClock,
   },
 };
 </script>

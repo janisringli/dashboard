@@ -1,36 +1,38 @@
+<style lang="scss" scoped src="@/styles/TimeClock.scss"></style>
+
 <template>
-  <div class="Time-clock__wrapper">
-    <SmallBox
-      ><div class="wrapper__time">
-        <span class="time__hour"> {{ getHour() }}</span>
-        <span class="time__colon">:</span>
-        <span class="time__minute">{{ getMinute() }}</span>
-      </div></SmallBox
-    >
+  <div class="time-clock__wrapper">
+    <div>
+      <div class="wrapper__clock">
+        <span class="clock__time">
+          {{ hours }}
+          <span class="time__colon">:</span>
+          {{ minutes }}
+        </span>
+      </div>
+    </div>
   </div>
 </template>
-<style lang="scss" scoped src="@/styles/TimeClock.scss"></style>
-<script>
-import SmallBox from "@/components/SmallBox.vue";
 
+<script>
 export default {
   name: "TimeClock",
-
-  components: {
-    SmallBox,
+  data: () => ({
+    currentTime: new Date(),
+  }),
+  computed: {
+    hours() {
+      return this.currentTime.getHours();
+    },
+    minutes() {
+      return this.currentTime.getMinutes();
+    },
   },
-  methods: {
-    getHour() {
-      const current = new Date();
-      const hour = current.getHours();
-
-      return hour;
-    },
-    getMinute() {
-      const current = new Date();
-      const minute = current.getMinutes();
-      return minute;
-    },
+  mounted() {
+    const instance = this;
+    setInterval(function () {
+      instance.currentTime = new Date();
+    }, 500);
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <!-- <TimeClock /> -->
+  <TimeClock />
   <WeatherCardCurrent></WeatherCardCurrent>
 </template>
 

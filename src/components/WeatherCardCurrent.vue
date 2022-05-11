@@ -35,7 +35,7 @@ export default {
   beforeMount() {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/onecall?lat=47.5160671&lon=8.5419603&exclude=hourly&units=metric&appid=09e31f3e5bdd8ad8441b635b33ba3dad"
+        "https://api.openweathermap.org/data/2.5/onecall?lat=47.5160671&lon=8.5419603&exclude=hourly&units=metric&appid=9ab415b856aec32a5060dbda065bc4f6"
       )
       .then((response) => {
         this.info = response.data;

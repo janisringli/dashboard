@@ -10,9 +10,11 @@
       <div class="content__stats">
         <img class="test" src="@/assets/svg/sun.svg" alt="sun" />
         <div class="stats__info">
-          <div class="info__temprature">9°/20°</div>
+          <div class="info__temprature">
+            <!-- hello {{ info?.daily?.temp?.min }} -->
+          </div>
           <div class="info__humidity">
-            Humidity: {{ info?.current?.humidity }}%
+            Humidity: {{ info?.current?.wind_speed }}%
           </div>
           <div class="info__wind">
             Wind: {{ Math.floor(info?.current?.wind_speed * 3.6) }} Km/h
@@ -33,14 +35,11 @@ export default {
     };
   },
   beforeMount() {
-    axios
-      .get(
-        "https://api.openweathermap.org/data/2.5/onecall?lat=47.5160671&lon=8.5419603&exclude=hourly&units=metric&appid=9ab415b856aec32a5060dbda065bc4f6"
-      )
-      .then((response) => {
-        this.info = response.data;
-        console.log(this.info);
-      });
+    console.log(process.env.VUE_APP_TEST);
+    axios.get(process.env.VUE_APP_TEST).then((response) => {
+      this.info = response.data;
+      console.log(this.info);
+    });
   },
 };
 </script>

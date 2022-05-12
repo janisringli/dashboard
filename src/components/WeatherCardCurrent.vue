@@ -35,7 +35,6 @@ export default {
     };
   },
   beforeMount() {
-    console.log(process.env.VUE_APP_TEST);
     axios.get(process.env.VUE_APP_TEST).then((response) => {
       this.info = response.data;
       console.log(this.info);

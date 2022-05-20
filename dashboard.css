@@ -48,7 +48,7 @@ body {
   box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   font-size: 72px;
-  color: #888888;
+  color: #b6b6b6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,7 @@ body {
   box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   font-size: 36px;
-  color: #888888;
+  color: #b6b6b6;
   display: flex;
 
   align-items: center;
@@ -103,7 +103,7 @@ body {
   box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   font-size: 20px;
-  color: #888888;
+  color: #b6b6b6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,31 +116,78 @@ body {
   letter-spacing: 2.5%;
   font-weight: 700;
 }
-/* ----------------------- Verse ----------------------- */
+/* ----------------------- Uptime ----------------------- */
 
-.uptime {
+.uptimePortfolio {
   position: absolute;
-  width: 606px;
-  height: 194px;
+  width: 293px;
+  height: 43px;
   left: 809px;
-  top: 556px;
+  top: 551px;
   background: #24272c;
   box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 52px;
+  gap: 36px;
 }
-.uptimeLight {
-  background-color: #8dea97;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  margin-left: 92px;
-}
-.domain {
+.website {
   color: #b6b6b6;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 16px;
+  width: 191;
+  text-align: center;
+}
+#uptimeLightPortfolio {
+  background-color: #fcba03;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 11px;
+}
+
+.uptimeYoutube {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 1122px;
+  top: 551px;
+  background: #24272c;
+  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+#uptimeLightYoutube {
+  background-color: #fcba03;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 11px;
+}
+
+.uptimeTraily {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 809px;
+  top: 603px;
+  background: #24272c;
+  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+
+#uptimeLightTraily {
+  background-color: #fcba03;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 11px;
 }

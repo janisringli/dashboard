@@ -1,28 +1,51 @@
-function ping() {
-  // The custom URL
-  var URL = $("https://ja.nisringli.ch").val();
-  var settings = {
-    cache: false,
-    dataType: "jsonp",
-    async: true,
-    crossDomain: true,
-    url: URL,
-    method: "GET",
-    // For response
-    statusCode: {
-      200: function (response) {
-        console.log("Status 200: Page is up!");
-      },
-      400: function (response) {
-        console.log("Status 400: Page is down.");
-      },
-      0: function (response) {
-        console.log("Status 0: Page is down.");
-      },
-    },
-  };
-  // Sends the request and observes the response
-  $.ajax(settings).done(function (response) {
-    console.log(response);
-  });
+function portfolioRequest() {
+  fetch("https://ja.nisringli.ch", { mode: "no-cors" })
+    .then((response) => {
+      console.log(response.status);
+      if (response.status == 0) {
+        document.getElementById("uptimeLightPortfolio").style.background =
+          "#8DEA97";
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      document.getElementById("uptimeLight").style.background = "#EB5151";
+    });
 }
+
+function youtubeRequest() {
+  fetch("https://youtube.com", { mode: "no-cors" })
+    .then((response) => {
+      console.log(response.status);
+      if (response.status == 0) {
+        document.getElementById("uptimeLightYoutube").style.background =
+          "#8DEA97";
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      document.getElementById("uptimeLight").style.background = "#EB5151";
+    });
+}
+function trailyRequest() {
+  fetch("https://traily.ch", { mode: "no-cors" })
+    .then((response) => {
+      console.log(response.status);
+      if (response.status == 0) {
+        document.getElementById("uptimeLightTraily").style.background =
+          "#8DEA97";
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      document.getElementById("uptimeLight").style.background = "#EB5151";
+    });
+}
+youtubeRequest();
+portfolioRequest();
+trailyRequest();
+setInterval(function () {
+  youtubeRequest();
+  portfolioRequest();
+  trailyRequest();
+}, 3000);

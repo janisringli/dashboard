@@ -4,16 +4,19 @@ body {
   background-color: #24272c;
   font-family: "Roboto", sans-serif;
 }
-
+.cardBase {
+  background: #24272c;
+  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #b6b6b6;
+  font-weight: 700;
+}
 .card3 {
   position: absolute;
   width: 606.35px;
   height: 500px;
   left: 809px;
   top: 25px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
 }
 
 .card5 {
@@ -22,9 +25,6 @@ body {
   height: 535px;
   left: 22px;
   top: 434px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
 }
 .card7 {
   position: absolute;
@@ -32,9 +32,6 @@ body {
   height: 194px;
   left: 809px;
   top: 775px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
 }
 
 /* ----------------------- Time ----------------------- */
@@ -44,11 +41,7 @@ body {
   height: 134px;
   left: 24px;
   top: 25px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   font-size: 72px;
-  color: #b6b6b6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,11 +70,7 @@ body {
   height: 134px;
   left: 331px;
   top: 25px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   font-size: 36px;
-  color: #b6b6b6;
   display: flex;
 
   align-items: center;
@@ -99,11 +88,7 @@ body {
   height: 225px;
   left: 22px;
   top: 184px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   font-size: 20px;
-  color: #b6b6b6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,23 +102,24 @@ body {
   font-weight: 700;
 }
 /* ----------------------- Uptime ----------------------- */
-
+.light {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 11px;
+}
 .uptimePortfolio {
   position: absolute;
   width: 293px;
   height: 43px;
   left: 809px;
   top: 551px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 36px;
 }
 .website {
-  color: #b6b6b6;
   font-weight: 700;
   font-size: 16px;
   width: 191;
@@ -141,10 +127,6 @@ body {
 }
 #uptimeLightPortfolio {
   background-color: #fcba03;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: 11px;
 }
 
 .uptimeYoutube {
@@ -153,9 +135,6 @@ body {
   height: 43px;
   left: 1122px;
   top: 551px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,10 +142,6 @@ body {
 }
 #uptimeLightYoutube {
   background-color: #fcba03;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: 11px;
 }
 
 .uptimeTraily {
@@ -175,9 +150,6 @@ body {
   height: 43px;
   left: 809px;
   top: 603px;
-  background: #24272c;
-  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,8 +158,81 @@ body {
 
 #uptimeLightTraily {
   background-color: #fcba03;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: 11px;
+}
+
+.uptimetest1 {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 1122px;
+  top: 655px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+
+#uptimeLightPortfolio {
+  background-color: #fcba03;
+}
+.uptimetest2 {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 1122px;
+  top: 603px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+
+#uptimeLightPortfolio {
+  background-color: #fcba03;
+}
+.uptimetest3 {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 809px;
+  top: 707px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+
+#uptimeLightPortfolio {
+  background-color: #fcba03;
+}
+
+.uptimetest5 {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 809px;
+  top: 655px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+
+#uptimeLightPortfolio {
+  background-color: #fcba03;
+}
+.uptimetest6 {
+  position: absolute;
+  width: 293px;
+  height: 43px;
+  left: 1122px;
+  top: 707px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+
+#uptimeLightPortfolio {
+  background-color: #fcba03;
 }

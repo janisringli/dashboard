@@ -10,9 +10,9 @@ body {
   border-radius: 8px;
   color: #b6b6b6;
   font-weight: 700;
+  position: absolute;
 }
 .card3 {
-  position: absolute;
   width: 606.35px;
   height: 500px;
   left: 809px;
@@ -20,14 +20,12 @@ body {
 }
 
 .card5 {
-  position: absolute;
   width: 762px;
   height: 535px;
   left: 22px;
   top: 434px;
 }
 .card7 {
-  position: absolute;
   width: 606px;
   height: 194px;
   left: 809px;
@@ -36,7 +34,6 @@ body {
 
 /* ----------------------- Time ----------------------- */
 .card__clock {
-  position: absolute;
   width: 282px;
   height: 134px;
   left: 24px;
@@ -65,14 +62,12 @@ body {
 
 /* ----------------------- Date ----------------------- */
 .card__Date {
-  position: absolute;
   width: 453px;
   height: 134px;
   left: 331px;
   top: 25px;
   font-size: 36px;
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -83,7 +78,6 @@ body {
 }
 /* ----------------------- Verse ----------------------- */
 .card__verse {
-  position: absolute;
   width: 762px;
   height: 225px;
   left: 22px;
@@ -109,7 +103,6 @@ body {
   margin-left: 11px;
 }
 .uptimePortfolio {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 809px;
@@ -130,7 +123,6 @@ body {
 }
 
 .uptimeYoutube {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 1122px;
@@ -145,7 +137,6 @@ body {
 }
 
 .uptimeTraily {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 809px;
@@ -161,7 +152,6 @@ body {
 }
 
 .uptimetest1 {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 1122px;
@@ -176,7 +166,6 @@ body {
   background-color: #fcba03;
 }
 .uptimetest2 {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 1122px;
@@ -191,7 +180,6 @@ body {
   background-color: #fcba03;
 }
 .uptimetest3 {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 809px;
@@ -207,7 +195,6 @@ body {
 }
 
 .uptimeCalc {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 809px;
@@ -222,7 +209,6 @@ body {
   background-color: #fcba03;
 }
 .uptimetest6 {
-  position: absolute;
   width: 293px;
   height: 43px;
   left: 1122px;

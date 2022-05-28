@@ -334,7 +334,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
   .website {
     font-weight: 700;
@@ -351,7 +351,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
 
   .uptimeTraily {
@@ -362,7 +362,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
 
   .uptimetest1 {
@@ -373,7 +373,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
   .uptimetest2 {
     width: 359px;
@@ -383,7 +383,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
 
   .uptimetest3 {
@@ -391,11 +391,10 @@ body {
     height: 43px;
     left: 1536px;
     top: 718px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
 
   .uptimeCalc {
@@ -406,7 +405,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
   .uptimetest6 {
     width: 360px;
@@ -416,6 +415,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 36px;
+    gap: 50px;
   }
 }

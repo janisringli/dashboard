@@ -96,6 +96,13 @@ body {
   font-weight: 700;
 }
 /* ----------------------- Uptime ----------------------- */
+.uptimeContainer {
+  width: 744px;
+  height: 199px;
+  left: 1152px;
+  top: 614px;
+  border: 1px solid red;
+}
 .light {
   border-radius: 50%;
   width: 20px;
@@ -221,4 +228,194 @@ body {
 
 #uptimeLightPortfolio {
   background-color: #fcba03;
+}
+
+@media only screen and (max-width: 1920px) {
+  .uptimeContainer {
+    width: 744px;
+    height: 199px;
+    left: 1152px;
+    top: 614px;
+    border: 1px solid red;
+  }
+  .card3 {
+    width: 744.35px;
+    height: 564px;
+    left: 1152px;
+    top: 25px;
+  }
+
+  .card5 {
+    width: 1105px;
+    height: 621px;
+    left: 22px;
+    top: 434px;
+  }
+  .card7 {
+    width: 744px;
+    height: 217px;
+    left: 1152px;
+    top: 838px;
+  }
+  /* ----------------------- Time ----------------------- */
+  .card__clock {
+    width: 383px;
+    height: 134px;
+    left: 24px;
+    top: 25px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .time__colon {
+    height: fit-content;
+    animation: blinkingText 1.2s infinite linear;
+  }
+
+  @keyframes blinkingText {
+    49% {
+      color: inherit;
+    }
+    50% {
+      color: transparent;
+    }
+    99% {
+      color: transparent;
+    }
+  }
+
+  /* ----------------------- Date ----------------------- */
+  .card__Date {
+    width: 695px;
+    height: 134px;
+    left: 432px;
+    top: 25px;
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #day,
+  #month,
+  #year {
+    margin-left: 10px;
+  }
+  /* ----------------------- Verse ----------------------- */
+  .card__verse {
+    width: 1105px;
+    height: 225px;
+    left: 22px;
+    top: 184px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #verse {
+    padding-top: 41px;
+    width: 638px;
+    text-align: center;
+    padding-bottom: 39px;
+    letter-spacing: 2.5%;
+  }
+  /* ----------------------- Uptime ----------------------- */
+  .light {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 11px;
+  }
+  .uptimePortfolio {
+    width: 359px;
+    height: 43px;
+    left: 1152px;
+    top: 614px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+  .website {
+    font-weight: 700;
+    font-size: 16px;
+    width: 191;
+    text-align: center;
+  }
+
+  .uptimeYoutube {
+    width: 360px;
+    height: 43px;
+    left: 1536px;
+    top: 614px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .uptimeTraily {
+    width: 359px;
+    height: 43px;
+    left: 1152px;
+    top: 666px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .uptimetest1 {
+    width: 360px;
+    height: 43px;
+    left: 1536px;
+    top: 666px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+  .uptimetest2 {
+    width: 359px;
+    height: 43px;
+    left: 1152px;
+    top: 718px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .uptimetest3 {
+    width: 360px;
+    height: 43px;
+    left: 1536px;
+    top: 718px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .uptimeCalc {
+    width: 359px;
+    height: 43px;
+    left: 1152px;
+    top: 770px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+  .uptimetest6 {
+    width: 360px;
+    height: 43px;
+    left: 1536px;
+    top: 770px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
 }
